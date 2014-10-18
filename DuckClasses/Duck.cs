@@ -1,13 +1,21 @@
 ﻿using System;
+using DuckClasses.Flying;
+using DuckClasses.Quacking;
 
 namespace DuckClasses
 {
     public abstract class Duck
     {
+        public IFlyBehavior flyBehavior;
+        public IQuackBehavior quackBehavior;
+
         public abstract void display();
         
-        public virtual void quack() {
-            Console.WriteLine("quack from the base class");
+        /// <summary>
+        /// Switching to an interface call
+        /// </summary>
+        public void performQuack() {
+            quackBehavior.quack();
         }
 
         public virtual void swim()
@@ -15,9 +23,12 @@ namespace DuckClasses
             Console.WriteLine("Base Duck is swimming.");
         }
 
-        public virtual void fly()
+        /// <summary>
+        /// Switching to an interface call
+        /// </summary>
+        public void performFly()
         {
-            Console.WriteLine("I am a duck flying");
+            flyBehavior.fly();
         }
 
     }
