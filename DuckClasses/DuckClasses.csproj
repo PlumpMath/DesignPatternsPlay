@@ -41,6 +41,7 @@
   <ItemGroup>
     <Compile Include="Duck.cs" />
     <Compile Include="Flying\FlyNoWay.cs" />
+    <Compile Include="Flying\FlyRocketPowered.cs" />
     <Compile Include="Flying\FlyWithWings.cs" />
     <Compile Include="Flying\IFlyBehavior.cs" />
     <Compile Include="MallardDuck.cs" />

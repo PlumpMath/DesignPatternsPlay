@@ -8,8 +8,8 @@ namespace DuckClasses
     {
         public RedheadDuck()
         {
-            quackBehavior = new Quack();
-            flyBehavior = new FlyWithWings();
+            setQuackBehavior = new Quack();
+            setFlyBehavior = new FlyWithWings();
         }
 
         public override void display()

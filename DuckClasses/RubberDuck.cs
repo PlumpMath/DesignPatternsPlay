@@ -8,8 +8,8 @@ namespace DuckClasses
     {
         public RubberDuck()
         {
-            flyBehavior = new FlyNoWay();
-            quackBehavior = new Squeak();
+            setFlyBehavior = new FlyNoWay();
+            setQuackBehavior = new Squeak();
         }
 
         public override void display()
